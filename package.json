@@ -1,0 +1,23 @@
+{
+  "name": "mikhailagudo.github.io",
+  "version": "1.0.0",
+  "description": "This is the repository for a personal website where my resume and work-related information will be at. There'll also be some content for other things that I like doing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikhailAgudo/MikhailAgudo.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikhailAgudo/MikhailAgudo.github.io/issues"
+  },
+  "homepage": "https://github.com/MikhailAgudo/MikhailAgudo.github.io#readme",
+  "dependencies": {
+    "webpack": "^5.13.0",
+    "webpack-cli": "^4.3.1"
+  }
+}
