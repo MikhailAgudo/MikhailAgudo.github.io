@@ -10,7 +10,7 @@ const NavBar = (() => {
     const initHome = () => {
         let newButton = addButton();
         newButton.textContent = "Resume";
-        
+
         bar.appendChild(newButton);
 
         newButton = addButton();
@@ -29,6 +29,8 @@ const NavBar = (() => {
 
         newButton.classList.add("navButton");
         newButton.classList.add("remove-button-defaults");
+        newButton.classList.add("secondary-color");
+        newButton.classList.add("nav-font-size");
 
         return newButton;
     }
