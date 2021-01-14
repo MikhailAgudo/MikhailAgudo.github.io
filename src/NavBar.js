@@ -10,9 +10,12 @@ const NavBar = (() => {
     const initHome = () => {
         let newButton = addButton();
         newButton.textContent = "Resume";
+        
         bar.appendChild(newButton);
+
         newButton = addButton();
         newButton.textContent = "Test";
+
         bar.appendChild(newButton);
     }
 
@@ -23,7 +26,10 @@ const NavBar = (() => {
 
     const addButton = () => {
         let newButton = document.createElement("button");
-        newButton.id = "navButton";
+
+        newButton.classList.add("navButton");
+        newButton.classList.add("remove-button-defaults");
+
         return newButton;
     }
 
