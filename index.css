@@ -1,13 +1,10 @@
 body {
-    color: white;
-    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
-
 .navbar {
     position: sticky;
     top: 0;
     height: 4em;
-    background-color: gray;
 }
 
 .navButton {
@@ -23,6 +20,20 @@ body {
 .has-horizontal-flex {
     display: flex;
     flex-direction: row;
+}
+
+.main-color {
+    color: white;
+    background-color: #392e2e;
+}
+
+.secondary-color {
+    color: white;
+    background-color: #1f1f1f;
+}
+
+.nav-font-size {
+    font-size: larger;
 }
 
 .remove-button-defaults {
