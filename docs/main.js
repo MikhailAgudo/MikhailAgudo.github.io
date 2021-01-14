@@ -1,0 +1,1 @@
+(()=>{"use strict";(()=>{const e=document.querySelector(".navbar"),t=()=>{let e=document.createElement("button");return e.id="navButton",e};return{render:()=>{(()=>{let n=t();n.textContent="Resume",e.appendChild(n),n=t(),n.textContent="Test",e.appendChild(n)})()}}})().render()})();
