@@ -3,8 +3,8 @@
 # Add content from the docs folder.
 git add docs
 
-# The argument $1 must contain "" because commit reasons.
-git commit -m $1
+# The commit message is "lorem ipsum" because it's not that important.
+git commit -m "lorem ipsum"
 
 # subtree push it to gh-pages
 git subtree push --prefix docs origin gh-pages
