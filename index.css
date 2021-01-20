@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 5vh;
 }
 
 h2 {
@@ -100,7 +100,6 @@ h2 {
 }
 
 .fullscreen-section {
-    position: relative;
     height: 100vh;
     width: 100%;
     overflow: auto;
