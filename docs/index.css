@@ -48,6 +48,16 @@ h2 {
     text-align: center;
 }
 
+.project-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .has-horizontal-flex {
     display: flex;
     flex-direction: row;

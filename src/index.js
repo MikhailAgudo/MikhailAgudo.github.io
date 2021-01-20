@@ -1,3 +1,3 @@
-import { NavBar } from './NavBar.js';
+import { Resume } from './Resume.js';
 
-NavBar.render();
+Resume.render()
