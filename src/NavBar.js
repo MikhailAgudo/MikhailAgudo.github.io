@@ -28,7 +28,7 @@ const NavBar = (() => {
 
         newButton.classList.add("nav-button");
         newButton.classList.add("remove-button-defaults");
-        newButton.classList.add("secondary-color");
+        newButton.classList.add("secondary-text-color");
         newButton.classList.add("nav-font-size");
 
         return newButton;
