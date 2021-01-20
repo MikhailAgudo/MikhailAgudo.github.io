@@ -2,14 +2,27 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#main {
-    margin: 1em 2em 0 2em;
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 3vh;
 }
 
 #navBar {
     position: sticky;
     top: 0;
     height: 4em;
+    width: 100%;
+}
+
+#header {
+    
+}
+
+#skills {
+
 }
 
 .nav-button {
@@ -18,33 +31,47 @@ body {
     margin: 1em;
 }
 
+.container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .has-horizontal-flex {
     display: flex;
     flex-direction: row;
 }
 
-.main-color {
-    color: white;
+.main-background {
     background-color: #000000;
 }
 
-.secondary-color {
-    color: white;
+.secondary-background {
     background-color: #560047;
 }
 
-.tertiary-color {
-    color: white;
+.tertiary-background {
     background-color: #CE00BC;
 }
 
-.fourth-color {
-    color: white;
+.fourth-background {
     background-color: #FF006C;
+}
+
+.main-text-color {
+    color: #ffffff;
+}
+
+.secondary-text-color {
+    color: #FF006C;
 }
 
 .nav-font-size {
     font-size: larger;
+}
+
+.skill-font-size {
+    font-size: 2vh;
 }
 
 .remove-button-defaults {
@@ -52,8 +79,51 @@ body {
     background: none;
 }
 
+.header-padding {
+    padding-top: 5em;
+}
+
+.text-padding {
+    padding-top: 2em;
+}
+
+.header {
+    vertical-align: middle;
+}
+
+.skill-title-shadows {
+    text-shadow: 1.5px 1.5px #CE00BC;
+}
+
+.skill-shadows {
+    text-shadow: 1px 1px#CE00BC;
+}
+
 .fullscreen-section {
+    position: relative;
     height: 100vh;
     width: 100%;
     overflow: auto;
+}
+
+.section-body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+}
+
+.paragraph-section {
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: justify;
+    line-height: 2;
+}
+
+.skill-section {
+    justify-content: center;
+    vertical-align: middle;
 }
