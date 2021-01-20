@@ -8,14 +8,14 @@ const NavBar = (() => {
     }
 
     const initHome = () => {
-        let resumeButton = addButton();
-        resumeButton.textContent = "Resume";
-
         let aboutButton = addButton();
         aboutButton.textContent = "About";
 
-        bar.appendChild(resumeButton);
+        let skillsButton = addButton();
+        skillsButton.textContent = "Skills";
+
         bar.appendChild(aboutButton);
+        bar.appendChild(skillsButton);
     }
 
     const addDiv = () => {
