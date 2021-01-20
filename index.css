@@ -11,11 +11,21 @@ h2 {
 }
 
 #navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: sticky;
     top: 0;
     height: 4em;
     width: 100%;
     z-index: 1000;
+}
+
+#navButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #header {
@@ -29,7 +39,7 @@ h2 {
 .nav-button {
     font-family: 'Courier New', Courier, monospace;
     text-align: left;
-    margin: 1em;
+    margin: 0 1vh 0 1vh;
 }
 
 .container {
@@ -68,7 +78,7 @@ h2 {
 }
 
 .nav-font-size {
-    font-size: larger;
+    font-size: 2vh;
 }
 
 .skill-font-size {
@@ -117,8 +127,7 @@ h2 {
 }
 
 .paragraph-section {
-    padding-left: 30%;
-    padding-right: 30%;
+    width: 50vh;
     text-align: justify;
     line-height: 2;
 }
