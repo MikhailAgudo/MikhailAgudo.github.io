@@ -1,20 +1,21 @@
 body {
     font-family: 'Courier New', Courier, monospace;
 }
-.navbar {
+
+#main {
+    margin: 1em 2em 0 2em;
+}
+
+#navBar {
     position: sticky;
     top: 0;
     height: 4em;
 }
 
-.navButton {
+.nav-button {
     font-family: 'Courier New', Courier, monospace;
     text-align: left;
     margin: 1em;
-}
-
-.main {
-    margin: 1em 2em 0 2em;
 }
 
 .has-horizontal-flex {
@@ -24,12 +25,22 @@ body {
 
 .main-color {
     color: white;
-    background-color: #392e2e;
+    background-color: #000000;
 }
 
 .secondary-color {
     color: white;
-    background-color: #1f1f1f;
+    background-color: #560047;
+}
+
+.tertiary-color {
+    color: white;
+    background-color: #CE00BC;
+}
+
+.fourth-color {
+    color: white;
+    background-color: #FF006C;
 }
 
 .nav-font-size {
@@ -39,4 +50,10 @@ body {
 .remove-button-defaults {
     border: none;
     background: none;
+}
+
+.fullscreen-section {
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
 }
