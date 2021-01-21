@@ -17,7 +17,7 @@ a {
 
     text-decoration: none;
     border-radius: 3px;
-    background-color: white;
+    padding: 1vh;
 }
 
 #navBar {
@@ -61,11 +61,25 @@ a {
 .project-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .project-details-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.project-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.project-image {
+    max-height: 10vh;
+    max-width: 20vh;
+    padding-right: 1vh;
 }
 
 .has-horizontal-flex {
@@ -146,6 +160,10 @@ a {
     flex: 1 0 auto;
 }
 
+.section-space {
+    padding-bottom: 10vh;
+}
+
 .paragraph-section {
     width: 50vh;
     text-align: justify;
@@ -159,6 +177,7 @@ a {
 
 .portfolio-section {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50vh 50vh;
     grid-template-rows: auto auto;
+    grid-gap: 10vh;
 }

@@ -11,15 +11,21 @@ const Resume = (() => {
     }
 
     const initiateProjects = () => {
-        let calculator = Project(
+        projects.push(Project(
             "Calculator",
             "This is a small project, to make a fairly capable calculator based on the Odin Project. The code does everything in the requirements and all the extra credits; save one. The project did not specify MDAS as a requirement, but this calculator will make use of it.",
             "images/calculator.png",
             "https://github.com/MikhailAgudo/JS-Full-Stack-Practice/tree/master/calculator",
             "https://github.com/MikhailAgudo/JS-Full-Stack-Practice/tree/master/calculator"
-        )
-        
-        projects.push(calculator);
+        ));
+
+        projects.push(Project(
+            "Etch-a-Sketch",
+            "A simple app that lets users draw on it.",
+            "images/calculator.png",
+            "https://github.com/MikhailAgudo/JS-Full-Stack-Practice/tree/master/etch-a-sketch",
+            "https://github.com/MikhailAgudo/JS-Full-Stack-Practice/tree/master/etch-a-sketch"
+        ));
     }
 
     const renderProjects = () => {
