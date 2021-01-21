@@ -24,7 +24,7 @@ const NavBar = (() => {
     }
 
     const addButton = () => {
-        let newButton = document.createElement("button");
+        let newButton = document.createElement("a");
 
         newButton.classList.add("nav-button");
         newButton.classList.add("remove-button-defaults");

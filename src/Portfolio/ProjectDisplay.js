@@ -32,20 +32,33 @@ const ProjectDisplay = (() => {
         let detailsContainer = document.createElement("div");
         let projectName = createName(name);
         let projectDescription = createDescription(description);
+
+        let buttonsContainer = createButtonsContainer();
         let projectCode = createLink(codeLink, "View Code");
 
         detailsContainer.classList.add("project-details-container");
 
         detailsContainer.appendChild(projectName);
         detailsContainer.appendChild(projectDescription);
-        detailsContainer.appendChild(projectCode);
+
+        buttonsContainer.appendChild(projectCode);
 
         if (liveLink !== null) {
             let projectLive = createLink(liveLink, "See it Live");
-            detailsContainer.appendChild(projectLive);
+            buttonsContainer.appendChild(projectLive);
         }
 
+        detailsContainer.appendChild(buttonsContainer);
+
         return detailsContainer;
+    }
+
+    const createButtonsContainer = () => {
+        let buttonsContainer = document.createElement("div");
+
+        buttonsContainer.classList.add("project-buttons-container");
+
+        return buttonsContainer;
     }
 
     const createName = (name) => {
@@ -64,8 +77,12 @@ const ProjectDisplay = (() => {
 
     const createLink = (codeLink, text) => {
         let projectCode = document.createElement("a");
+
         projectCode.href = codeLink;
         projectCode.textContent = text;
+
+        projectCode.classList.add("secondary-background");
+        projectCode.classList.add("secondary-text-color");
 
         return projectCode;
     }
@@ -74,6 +91,8 @@ const ProjectDisplay = (() => {
         let projectImage = document.createElement("img");
 
         projectImage.src = imageLink;
+
+        projectImage.classList.add("project-image");
 
         return projectImage;
     }
