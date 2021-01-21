@@ -2,29 +2,17 @@ const NavBar = (() => {
     const bar = document.querySelector("#navBar");
     const siteTitle = "Mikhail Joseph T. Agudo";
 
-    const render = () => {
+    const renderButton = (text, link) => {
         // Add content to .navbar
-        initHome();
+        let newButton = addButton(text, link);
+        bar.appendChild(newButton);
     }
 
-    const initHome = () => {
-        let aboutButton = addButton();
-        aboutButton.textContent = "About";
-
-        let skillsButton = addButton();
-        skillsButton.textContent = "Skills";
-
-        bar.appendChild(aboutButton);
-        bar.appendChild(skillsButton);
-    }
-
-    const addDiv = () => {
-        let newDiv = document.createElement("div");
-        return newDiv;
-    }
-
-    const addButton = () => {
+    const addButton = (text, link) => {
         let newButton = document.createElement("a");
+
+        newButton.textContent = text;
+        newButton.href = link;
 
         newButton.classList.add("nav-button");
         newButton.classList.add("remove-button-defaults");
@@ -35,7 +23,7 @@ const NavBar = (() => {
     }
 
     return {
-        render
+        renderButton
     }
 })();
 

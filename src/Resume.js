@@ -1,13 +1,20 @@
 import { Project } from './Portfolio/Project.js';
 import { ProjectDisplay } from './Portfolio/ProjectDisplay.js';
-import { NavBar } from './NavBar.js';
+import { NavBar } from './NavBar/NavBar.js';
 
 const Resume = (() => {
     let projects = [];
     const render = () => {
         initiateProjects();
         renderProjects();
-        NavBar.render();
+        renderNavBar();
+    }
+
+    const renderNavBar = () => {
+        NavBar.renderButton("About", "#header");
+        NavBar.renderButton("Skills", "#skills");
+        NavBar.renderButton("Portfolio", "#portfolio");
+        NavBar.renderButton("Contact", "#contact");
     }
 
     const initiateProjects = () => {

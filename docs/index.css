@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -43,7 +47,8 @@ a {
 }
 
 #skills {
-
+    background: radial-gradient(#560047, #000000);
+    background-attachment: fixed;
 }
 
 .nav-button {
@@ -80,6 +85,10 @@ a {
     max-height: 10vh;
     max-width: 20vh;
     padding-right: 1vh;
+}
+
+.contact-image {
+    max-height: 5vh;
 }
 
 .has-horizontal-flex {
