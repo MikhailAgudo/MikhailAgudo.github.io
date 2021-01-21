@@ -57,6 +57,7 @@ const ProjectDisplay = (() => {
         let buttonsContainer = document.createElement("div");
 
         buttonsContainer.classList.add("project-buttons-container");
+        buttonsContainer.classList.add("project-padding");
 
         return buttonsContainer;
     }
@@ -71,6 +72,8 @@ const ProjectDisplay = (() => {
     const createDescription = (description) => {
         let projectDescription = document.createElement("p");
         projectDescription.textContent = description;
+
+        projectDescription.classList.add("project-padding");
 
         return projectDescription;
     }
