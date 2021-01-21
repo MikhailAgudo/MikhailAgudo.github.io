@@ -132,6 +132,10 @@ a {
     padding-top: 2em;
 }
 
+.project-padding {
+    padding-top: 1vh;
+}
+
 .header {
     vertical-align: middle;
 }
