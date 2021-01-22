@@ -91,6 +91,12 @@ a {
     max-height: 5vh;
 }
 
+.my-image {
+    max-height: 30vh;
+    border: 2px solid #560047;
+    border-radius: 100%;
+}
+
 .header-background {
     background-image: url(images/activity.jpg);
     background-size: cover;
@@ -200,8 +206,21 @@ a {
     flex: 1 0 auto;
 }
 
+.section-apply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+}
+
 .section-space {
     padding-bottom: 10vh;
+}
+
+.image-space {
+    margin-bottom: 2vh;
 }
 
 .paragraph-section {
