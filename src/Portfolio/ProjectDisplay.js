@@ -1,5 +1,5 @@
 const ProjectDisplay = (() => {
-    const portfolioSection = document.querySelector(".portfolio-section");
+    const portfolioSection = document.querySelector(".portfolio-body");
 
     const render = (project) => {
         let projectContainer = createContainer();
