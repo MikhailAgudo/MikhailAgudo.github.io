@@ -43,7 +43,7 @@ a {
 }
 
 #header {
-    
+
 }
 
 #skills {
@@ -91,6 +91,20 @@ a {
     max-height: 5vh;
 }
 
+.header-background {
+    background-image: url(images/activity.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.header-blur {
+    background: rgba(1, 1, 1, 0.55);
+    backdrop-filter: blur(8px);
+}
+
 .has-horizontal-flex {
     display: flex;
     flex-direction: row;
@@ -110,6 +124,15 @@ a {
 
 .fourth-background {
     background-color: #FF006C;
+}
+
+.background-position {
+    position: fixed;
+    display: block;
+}
+
+.background-index {
+    z-index: -1;
 }
 
 .main-text-color {
@@ -147,6 +170,10 @@ a {
 
 .header {
     vertical-align: middle;
+}
+
+.header-shadows {
+    text-shadow: 1px 2px #560047;
 }
 
 .skill-title-shadows {
