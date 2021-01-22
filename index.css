@@ -235,8 +235,13 @@ a {
 }
 
 .portfolio-section {
+    padding: 10vh 0 10vh 0;
+    width: 100%;
+    overflow: auto;
+}
+
+.portfolio-body {
     display: grid;
     grid-template-columns: 50vh 50vh;
-    grid-template-rows: auto auto;
     grid-gap: 10vh;
 }
