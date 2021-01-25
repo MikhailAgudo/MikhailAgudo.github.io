@@ -20,6 +20,7 @@ const Resume = (() => {
     const initiateProjects = () => {
         projects.push(Project(
             "Calculator",
+            ["JavaScript", "HTML/CSS"],
             "This is a calculator that takes input from a string and solves it using MDAS.",
             "images/calculator.png",
             "https://github.com/MikhailAgudo/MikhailAgudo.github.io/tree/master/docs/calculator",
@@ -28,6 +29,7 @@ const Resume = (() => {
 
         projects.push(Project(
             "Etch-A-Sketch",
+            ["JavaScript", "HTML/CSS"],
             "A simple app that lets users draw in different hues from white to black, like a a real Etch a Sketch.",
             "images/sketch.png",
             "https://github.com/MikhailAgudo/MikhailAgudo.github.io/tree/master/docs/etch-a-sketch",
@@ -36,6 +38,7 @@ const Resume = (() => {
 
         projects.push(Project(
             "Tic-Tac-Toe",
+            ["JavaScript", "HTML/CSS"],
             "Tic-Tac-Toe game where players click on the buttons to decide their move. Does not include AI.",
             "images/tictactoe.png",
             "https://github.com/MikhailAgudo/MikhailAgudo.github.io/tree/master/docs/tic-tac-toe",
