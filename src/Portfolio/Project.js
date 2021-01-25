@@ -1,4 +1,4 @@
-const Project = (name, description, imageLink, codeLink, liveLink) => {
+const Project = (name, tags, description, imageLink, codeLink, liveLink) => {
     // $name and $description are strings, to be displayed
     // by ProjectDisplay.js
     // $imageLink has the same function.
@@ -8,6 +8,7 @@ const Project = (name, description, imageLink, codeLink, liveLink) => {
 
     return {
         name,
+        tags,
         description,
         imageLink,
         codeLink,

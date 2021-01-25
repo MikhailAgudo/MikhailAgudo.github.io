@@ -4,7 +4,7 @@ const ProjectDisplay = (() => {
     const render = (project) => {
         let projectContainer = createContainer();
         let projectImage = createImage(project.imageLink);
-        let detailsContainer = createDetailsContainer(project.name, project.description, project.codeLink, project.liveLink);
+        let detailsContainer = createDetailsContainer(project.name, project.tags, project.description, project.codeLink, project.liveLink);
 
         appendProjectDetails(projectContainer, projectImage, detailsContainer);
 
@@ -28,9 +28,13 @@ const ProjectDisplay = (() => {
         return projectContainer;
     }
 
-    const createDetailsContainer = (name, description, codeLink, liveLink) => {
+    const createDetailsContainer = (name, tags, description, codeLink, liveLink) => {
         let detailsContainer = document.createElement("div");
         let projectName = createName(name);
+
+        let projectTags = createButtonsContainer();
+        createTags(projectTags, tags);
+
         let projectDescription = createDescription(description);
 
         let buttonsContainer = createButtonsContainer();
@@ -39,6 +43,7 @@ const ProjectDisplay = (() => {
         detailsContainer.classList.add("project-details-container");
 
         detailsContainer.appendChild(projectName);
+        detailsContainer.appendChild(projectTags);
         detailsContainer.appendChild(projectDescription);
 
         buttonsContainer.appendChild(projectCode);
@@ -67,6 +72,21 @@ const ProjectDisplay = (() => {
         projectName.textContent = name;
 
         return projectName;
+    }
+
+    const createTags = (projectTags, tags) => {
+        let newTag = tags.shift();
+
+        let newTagDiv = document.createElement("div");
+        newTagDiv.textContent = newTag;
+
+        projectTags.appendChild(newTagDiv);
+
+        if (tags.length === 0) {
+
+        } else {
+            createTags(projectTags, tags);
+        }
     }
 
     const createDescription = (description) => {
