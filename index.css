@@ -57,6 +57,11 @@ a {
     margin: 0 1vh 0 1vh;
 }
 
+.portfolio-tag {
+    border-radius: 5vh;
+    padding: 1vh;
+}
+
 .container {
     justify-content: center;
     align-items: center;
@@ -132,6 +137,10 @@ a {
     background-color: #FF006C;
 }
 
+.fifth-background {
+    background-color: #565656;
+}
+
 .background-position {
     position: fixed;
     display: block;
@@ -147,6 +156,10 @@ a {
 
 .secondary-text-color {
     color: #FF006C;
+}
+
+.tertiary-text-color {
+    color: #CECECE;
 }
 
 .nav-font-size {
