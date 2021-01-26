@@ -58,8 +58,9 @@ a {
 }
 
 .portfolio-tag {
-    border-radius: 5vh;
-    padding: 1vh;
+    border-radius: 1vh;
+    padding: 0.5vh;
+    margin: 0 0.5vh 0 0.5vh;
 }
 
 .container {
@@ -84,6 +85,13 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.project-tags-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-between;
 }
 
 .project-image {
