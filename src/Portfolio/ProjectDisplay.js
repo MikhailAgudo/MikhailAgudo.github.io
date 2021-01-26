@@ -80,6 +80,10 @@ const ProjectDisplay = (() => {
         let newTagDiv = document.createElement("div");
         newTagDiv.textContent = newTag;
 
+        newTagDiv.classList.add("portfolio-tag");
+        newTagDiv.classList.add("fifth-background");
+        newTagDiv.classList.add("tertiary-text-color");
+
         projectTags.appendChild(newTagDiv);
 
         if (tags.length === 0) {
