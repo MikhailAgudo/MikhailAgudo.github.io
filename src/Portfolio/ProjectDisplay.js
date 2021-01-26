@@ -32,7 +32,7 @@ const ProjectDisplay = (() => {
         let detailsContainer = document.createElement("div");
         let projectName = createName(name);
 
-        let projectTags = createButtonsContainer();
+        let projectTags = createTagsContainer();
         createTags(projectTags, tags);
 
         let projectDescription = createDescription(description);
@@ -65,6 +65,15 @@ const ProjectDisplay = (() => {
         buttonsContainer.classList.add("project-padding");
 
         return buttonsContainer;
+    }
+
+    const createTagsContainer = () => {
+        let projectTags = document.createElement("div");
+
+        projectTags.classList.add("project-tags-container");
+
+
+        return projectTags;
     }
 
     const createName = (name) => {
