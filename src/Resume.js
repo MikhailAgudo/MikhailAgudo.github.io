@@ -43,6 +43,15 @@ const Resume = (() => {
             "images/tictactoe.png",
             "https://github.com/MikhailAgudo/MikhailAgudo.github.io/tree/master/docs/tic-tac-toe",
             "tic-tac-toe/tictactoe.html"
+        ));
+
+        projects.push(Project(
+            "Ironsworn Dice",
+            ["Linux Bash"],
+            "A linux script that rolls a six-sided die and two ten-sided dice, used for playing Ironsworn (by Shawn Tomkin)",
+            "images/ironsworn-dice.png",
+            "https://github.com/MikhailAgudo/Bash-Ironsworn-Dice",
+            null
         ))
     }
 
