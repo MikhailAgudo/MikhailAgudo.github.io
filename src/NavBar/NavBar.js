@@ -1,14 +1,17 @@
 const NavBar = (() => {
     const bar = document.querySelector("#navBar");
-    const siteTitle = "Mikhail Joseph T. Agudo";
 
     const renderButton = (text, link) => {
-        // Add content to .navbar
+        // This method groups up all needed variables and
+        // functions to render a button.
+
         let newButton = addButton(text, link);
         bar.appendChild(newButton);
     }
 
     const addButton = (text, link) => {
+        // The element is "a" because we need it to be a link
+        // that lets us scroll down to each section.
         let newButton = document.createElement("a");
 
         newButton.textContent = text;

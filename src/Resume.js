@@ -3,14 +3,21 @@ import { ProjectDisplay } from './Portfolio/ProjectDisplay.js';
 import { NavBar } from './NavBar/NavBar.js';
 
 const Resume = (() => {
+    // $projects is meant to store Project objects
+    // which is used by renderProjects()
     let projects = [];
+
     const render = () => {
+        // This method starts all of the other methods
+        // relevant to initiating code, and other content
         initiateProjects();
         renderProjects();
         renderNavBar();
     }
 
     const renderNavBar = () => {
+        // Creates and adds new buttons to the navigation
+        // bar, using the NavBar module
         NavBar.renderButton("About", "#header");
         NavBar.renderButton("Skills", "#skills");
         NavBar.renderButton("Portfolio", "#portfolio");
@@ -18,6 +25,11 @@ const Resume = (() => {
     }
 
     const initiateProjects = () => {
+        // Method to initiate all projects in the portfolio.
+        // Needed, because if it's all pure HTML, then each and every
+        // change to classes need to me manually typed. If it's in
+        // JS then only ProjectDisplay.js needs to change.
+
         projects.push(Project(
             "Calculator",
             ["JavaScript", "HTML/CSS"],
@@ -56,6 +68,10 @@ const Resume = (() => {
     }
 
     const renderProjects = () => {
+        // Recursive function, to get all of the Project objects
+        // in $projects, then render them in the front-end
+        // using the ProjectDisplay module.
+
         let newProject = projects.shift();
         ProjectDisplay.render(newProject);
 
@@ -67,6 +83,8 @@ const Resume = (() => {
     }
 
     return {
+        // The only function that's really needed for Resume is
+        // to render the relevant items. So only render() is here.
         render
     }
 })();
