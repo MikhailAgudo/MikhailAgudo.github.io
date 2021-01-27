@@ -2,25 +2,32 @@ const ProjectDisplay = (() => {
     const portfolioSection = document.querySelector(".portfolio-body");
 
     const render = (project) => {
+        // render() will do each necessary function to put the project
+        // in the UI.
+
+        // Create the containers first, which all have their own
+        // way of organizing content (some are horizontal, some vertical)
         let projectContainer = createContainer();
         let projectImage = createImage(project.imageLink);
         let detailsContainer = createDetailsContainer(project.name, project.tags, project.description, project.codeLink, project.liveLink);
 
+        // Then append the details into one whole container
         appendProjectDetails(projectContainer, projectImage, detailsContainer);
 
-        appendProject(projectContainer);
-    }
-
-    const appendProject = (projectContainer) => {
+        // Then append the project into the grid section
         portfolioSection.appendChild(projectContainer);
     }
 
     const appendProjectDetails = (projectContainer, projectImage, detailsContainer) => {
+        // $projectContainer is just one box, so it should contain the image
+        // and then the project details
+
         projectContainer.appendChild(projectImage);
         projectContainer.appendChild(detailsContainer);
     }
 
     const createContainer = () => {
+        // This method exists to contain the project image and details
         let projectContainer = document.createElement("div");
 
         projectContainer.classList.add("project-container");
@@ -29,6 +36,11 @@ const ProjectDisplay = (() => {
     }
 
     const createDetailsContainer = (name, tags, description, codeLink, liveLink) => {
+        // createDetailsContainer() executes all of the other sub-functions
+        // that create the actual elements needed to show the project
+        // details. The subfunctions are arranged in order of how they
+        // appear in the front-end, from top to bottom.
+
         let detailsContainer = document.createElement("div");
         let projectName = createName(name);
 
@@ -42,6 +54,8 @@ const ProjectDisplay = (() => {
 
         detailsContainer.classList.add("project-details-container");
 
+        // Then, append all of them in order.
+
         detailsContainer.appendChild(projectName);
         detailsContainer.appendChild(projectTags);
         detailsContainer.appendChild(projectDescription);
@@ -49,6 +63,10 @@ const ProjectDisplay = (() => {
         buttonsContainer.appendChild(projectCode);
 
         if (liveLink !== null) {
+            // If there is a link for a live display, then make it
+            // and append. This is the last so that the
+            // function doesn't needlessly create $projectLive
+
             let projectLive = createLink(liveLink, "See it Live");
             buttonsContainer.appendChild(projectLive);
         }
@@ -84,6 +102,8 @@ const ProjectDisplay = (() => {
     }
 
     const createTags = (projectTags, tags) => {
+        // A recursive function that adds all of the tags
+        // from the array and makes them usable in the front-end
         let newTag = tags.shift();
 
         let newTagDiv = document.createElement("div");
