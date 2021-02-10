@@ -1,3 +1,5 @@
+import { Structurer } from './../Structurer.js';
+
 const ProjectDisplay = (() => {
     const portfolioSection = document.querySelector('.portfolio-body');
 
@@ -12,18 +14,10 @@ const ProjectDisplay = (() => {
         let detailsContainer = createDetailsContainer(project.name, project.tags, project.description, project.codeLink, project.liveLink);
 
         // Then append the details into one whole container
-        appendProjectDetails(projectContainer, projectImage, detailsContainer);
+        Structurer.appendChildren(projectContainer, [projectImage, detailsContainer]);
 
         // Then append the project into the grid section
         portfolioSection.appendChild(projectContainer);
-    }
-
-    const appendProjectDetails = (projectContainer, projectImage, detailsContainer) => {
-        // $projectContainer is just one box, so it should contain the image
-        // and then the project details
-
-        projectContainer.appendChild(projectImage);
-        projectContainer.appendChild(detailsContainer);
     }
 
     const createContainer = () => {
@@ -56,9 +50,11 @@ const ProjectDisplay = (() => {
 
         // Then, append all of them in order.
 
-        detailsContainer.appendChild(projectName);
-        detailsContainer.appendChild(projectTags);
-        detailsContainer.appendChild(projectDescription);
+        Structurer.appendChildren(detailsContainer, [projectName, projectTags, projectDescription]);
+
+        //detailsContainer.appendChild(projectName);
+        //detailsContainer.appendChild(projectTags);
+        //detailsContainer.appendChild(projectDescription);
 
         buttonsContainer.appendChild(projectCode);
 
@@ -79,8 +75,10 @@ const ProjectDisplay = (() => {
     const createButtonsContainer = () => {
         let buttonsContainer = document.createElement('div');
 
-        buttonsContainer.classList.add('project-buttons-container');
-        buttonsContainer.classList.add('project-padding');
+        Structurer.addClasses(buttonsContainer, [
+            'project-buttons-container',
+            'project-padding'
+        ]);
 
         return buttonsContainer;
     }
@@ -89,7 +87,6 @@ const ProjectDisplay = (() => {
         let projectTags = document.createElement('div');
 
         projectTags.classList.add('project-tags-container');
-
 
         return projectTags;
     }
@@ -109,9 +106,11 @@ const ProjectDisplay = (() => {
         let newTagDiv = document.createElement('div');
         newTagDiv.textContent = newTag;
 
-        newTagDiv.classList.add('portfolio-tag');
-        newTagDiv.classList.add('fifth-background');
-        newTagDiv.classList.add('tertiary-text-color');
+        Structurer.addClasses(newTagDiv, [
+            'portfolio-tag',
+            'fifth-background',
+            'tertiary-text-color'
+        ]);
 
         projectTags.appendChild(newTagDiv);
 
@@ -137,8 +136,10 @@ const ProjectDisplay = (() => {
         projectCode.href = codeLink;
         projectCode.textContent = text;
 
-        projectCode.classList.add('secondary-background');
-        projectCode.classList.add('secondary-text-color');
+        Structurer.addClasses(projectCode, [
+            'secondary-background',
+            'secondary-text-color'
+        ]);
 
         return projectCode;
     }
