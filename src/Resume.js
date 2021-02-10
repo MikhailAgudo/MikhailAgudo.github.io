@@ -18,10 +18,10 @@ const Resume = (() => {
     const renderNavBar = () => {
         // Creates and adds new buttons to the navigation
         // bar, using the NavBar module
-        NavBar.renderButton("About", "#header");
-        NavBar.renderButton("Skills", "#skills");
-        NavBar.renderButton("Portfolio", "#portfolio");
-        NavBar.renderButton("Contact", "#contact");
+        NavBar.renderButton('About', '#header');
+        NavBar.renderButton('Skills', '#skills');
+        NavBar.renderButton('Portfolio', '#portfolio');
+        NavBar.renderButton('Contact', '#contact');
     }
 
     const initiateProjects = () => {
@@ -31,38 +31,38 @@ const Resume = (() => {
         // JS then only ProjectDisplay.js needs to change.
 
         projects.push(Project(
-            "Calculator",
-            ["JavaScript", "HTML/CSS"],
-            "This is a calculator that takes input from a string and solves it using MDAS.",
-            "images/calculator.png",
-            "https://github.com/MikhailAgudo/MikhailAgudo.github.io/tree/master/docs/calculator",
-            "calculator/calculator.html"
+            'Calculator',
+            ['JavaScript', 'HTML/CSS'],
+            'This is a calculator that takes input from a string and solves it using MDAS.',
+            'images/calculator.png',
+            'https://github.com/MikhailAgudo/MikhailAgudo.github.io/tree/master/docs/calculator',
+            'calculator/calculator.html'
         ));
 
         projects.push(Project(
-            "Etch-A-Sketch",
-            ["JavaScript", "HTML/CSS"],
-            "A simple app that lets users draw in different hues from white to black, like a a real Etch a Sketch.",
-            "images/sketch.png",
-            "https://github.com/MikhailAgudo/MikhailAgudo.github.io/tree/master/docs/etch-a-sketch",
-            "etch-a-sketch/sketch.html"
+            'Etch-A-Sketch',
+            ['JavaScript', 'HTML/CSS'],
+            'A simple app that lets users draw in different hues from white to black, like a a real Etch a Sketch.',
+            'images/sketch.png',
+            'https://github.com/MikhailAgudo/MikhailAgudo.github.io/tree/master/docs/etch-a-sketch',
+            'etch-a-sketch/sketch.html'
         ));
 
         projects.push(Project(
-            "Tic-Tac-Toe",
-            ["JavaScript", "HTML/CSS"],
-            "Tic-Tac-Toe game where players click on the buttons to decide their move. Does not include AI.",
-            "images/tictactoe.png",
-            "https://github.com/MikhailAgudo/MikhailAgudo.github.io/tree/master/docs/tic-tac-toe",
-            "tic-tac-toe/tictactoe.html"
+            'Tic-Tac-Toe',
+            ['JavaScript', 'HTML/CSS'],
+            'Tic-Tac-Toe game where players click on the buttons to decide their move. Does not include AI.',
+            'images/tictactoe.png',
+            'https://github.com/MikhailAgudo/MikhailAgudo.github.io/tree/master/docs/tic-tac-toe',
+            'tic-tac-toe/tictactoe.html'
         ));
 
         projects.push(Project(
-            "Ironsworn Dice",
-            ["Linux Bash"],
-            "A linux script that rolls a six-sided die and two ten-sided dice, used for playing Ironsworn (by Shawn Tomkin)",
-            "images/ironsworn-dice.png",
-            "https://github.com/MikhailAgudo/Bash-Ironsworn-Dice",
+            'Ironsworn Dice',
+            ['Linux Bash'],
+            'A linux script that rolls a six-sided die and two ten-sided dice, used for playing Ironsworn (by Shawn Tomkin)',
+            'images/ironsworn-dice.png',
+            'https://github.com/MikhailAgudo/Bash-Ironsworn-Dice',
             null
         ))
     }

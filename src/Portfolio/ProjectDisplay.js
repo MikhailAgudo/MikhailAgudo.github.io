@@ -1,5 +1,5 @@
 const ProjectDisplay = (() => {
-    const portfolioSection = document.querySelector(".portfolio-body");
+    const portfolioSection = document.querySelector('.portfolio-body');
 
     const render = (project) => {
         // render() will do each necessary function to put the project
@@ -28,9 +28,9 @@ const ProjectDisplay = (() => {
 
     const createContainer = () => {
         // This method exists to contain the project image and details
-        let projectContainer = document.createElement("div");
+        let projectContainer = document.createElement('div');
 
-        projectContainer.classList.add("project-container");
+        projectContainer.classList.add('project-container');
         
         return projectContainer;
     }
@@ -41,7 +41,7 @@ const ProjectDisplay = (() => {
         // details. The subfunctions are arranged in order of how they
         // appear in the front-end, from top to bottom.
 
-        let detailsContainer = document.createElement("div");
+        let detailsContainer = document.createElement('div');
         let projectName = createName(name);
 
         let projectTags = createTagsContainer();
@@ -50,9 +50,9 @@ const ProjectDisplay = (() => {
         let projectDescription = createDescription(description);
 
         let buttonsContainer = createButtonsContainer();
-        let projectCode = createLink(codeLink, "View Code");
+        let projectCode = createLink(codeLink, 'View Code');
 
-        detailsContainer.classList.add("project-details-container");
+        detailsContainer.classList.add('project-details-container');
 
         // Then, append all of them in order.
 
@@ -67,7 +67,7 @@ const ProjectDisplay = (() => {
             // and append. This is the last so that the
             // function doesn't needlessly create $projectLive
 
-            let projectLive = createLink(liveLink, "See it Live");
+            let projectLive = createLink(liveLink, 'See it Live');
             buttonsContainer.appendChild(projectLive);
         }
 
@@ -77,25 +77,25 @@ const ProjectDisplay = (() => {
     }
 
     const createButtonsContainer = () => {
-        let buttonsContainer = document.createElement("div");
+        let buttonsContainer = document.createElement('div');
 
-        buttonsContainer.classList.add("project-buttons-container");
-        buttonsContainer.classList.add("project-padding");
+        buttonsContainer.classList.add('project-buttons-container');
+        buttonsContainer.classList.add('project-padding');
 
         return buttonsContainer;
     }
 
     const createTagsContainer = () => {
-        let projectTags = document.createElement("div");
+        let projectTags = document.createElement('div');
 
-        projectTags.classList.add("project-tags-container");
+        projectTags.classList.add('project-tags-container');
 
 
         return projectTags;
     }
 
     const createName = (name) => {
-        let projectName = document.createElement("h2");
+        let projectName = document.createElement('h2');
         projectName.textContent = name;
 
         return projectName;
@@ -106,12 +106,12 @@ const ProjectDisplay = (() => {
         // from the array and makes them usable in the front-end
         let newTag = tags.shift();
 
-        let newTagDiv = document.createElement("div");
+        let newTagDiv = document.createElement('div');
         newTagDiv.textContent = newTag;
 
-        newTagDiv.classList.add("portfolio-tag");
-        newTagDiv.classList.add("fifth-background");
-        newTagDiv.classList.add("tertiary-text-color");
+        newTagDiv.classList.add('portfolio-tag');
+        newTagDiv.classList.add('fifth-background');
+        newTagDiv.classList.add('tertiary-text-color');
 
         projectTags.appendChild(newTagDiv);
 
@@ -123,32 +123,32 @@ const ProjectDisplay = (() => {
     }
 
     const createDescription = (description) => {
-        let projectDescription = document.createElement("p");
+        let projectDescription = document.createElement('p');
         projectDescription.textContent = description;
 
-        projectDescription.classList.add("project-padding");
+        projectDescription.classList.add('project-padding');
 
         return projectDescription;
     }
 
     const createLink = (codeLink, text) => {
-        let projectCode = document.createElement("a");
+        let projectCode = document.createElement('a');
 
         projectCode.href = codeLink;
         projectCode.textContent = text;
 
-        projectCode.classList.add("secondary-background");
-        projectCode.classList.add("secondary-text-color");
+        projectCode.classList.add('secondary-background');
+        projectCode.classList.add('secondary-text-color');
 
         return projectCode;
     }
 
     const createImage = (imageLink) => {
-        let projectImage = document.createElement("img");
+        let projectImage = document.createElement('img');
 
         projectImage.src = imageLink;
 
-        projectImage.classList.add("project-image");
+        projectImage.classList.add('project-image');
 
         return projectImage;
     }
