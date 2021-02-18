@@ -1,3 +1,5 @@
+import { Structurer } from './../Structurer.js';
+
 const NavBar = (() => {
     const bar = document.querySelector('#navBar');
 
@@ -16,11 +18,13 @@ const NavBar = (() => {
 
         newButton.textContent = text;
         newButton.href = link;
-
-        newButton.classList.add('nav-button');
-        newButton.classList.add('remove-button-defaults');
-        newButton.classList.add('secondary-text-color');
-        newButton.classList.add('nav-font-size');
+       
+        Structurer.addClasses(newButton, [
+            'nav-button',
+            'remove-button-defaults',
+            'secondary-text-color',
+            'nav-font-size'
+        ]);
 
         return newButton;
     }
