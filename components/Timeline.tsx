@@ -9,7 +9,7 @@ const timelineData = [
     icon: GraduationCap,
     title: 'Ateneo de Manila University',
     role: 'BS MIS',
-    date: '2019-2020',
+    date: 'August 2015 - December 2019',
     description: 'Bachelor of Science in Management Information Systems',
     color: 'blue',
   },
@@ -19,7 +19,7 @@ const timelineData = [
     title: 'Village88',
     role: 'Trainee',
     date: 'March 2021',
-    description: 'Intensive coding bootcamp focused on full-stack development',
+    description: 'Intensive coding bootcamp focused on full-stack web development',
     color: 'green',
   },
   {
@@ -29,11 +29,11 @@ const timelineData = [
     role: 'Software Engineer',
     date: 'April 2021 - October 2025',
     description:
-      'Led Oracle HCM Cloud implementations, integrations, and reporting solutions for enterprise clients',
+      'Created Oracle HCM Cloud integrations, and reporting solutions for enterprise clients',
     achievements: [
       'Delivered 20+ enterprise-scale projects',
-      'Specialized in HCM Cloud, OIC, and BI Publisher',
-      'Worked with Fortune 500 companies',
+      'Specialized in Oracle HCM Cloud, Oracle Integration Cloud, and Oracle BI Publisher',
+      'Worked with three Fortune 500 companies',
     ],
     color: 'purple',
   },
@@ -42,7 +42,7 @@ const timelineData = [
     icon: Sparkles,
     title: 'Freelance AI Specialist',
     role: 'AI Automation Engineer',
-    date: 'Current',
+    date: 'December 2025 - Current',
     description:
       'Building AI-powered automation solutions and modern web applications',
     color: 'orange',
