@@ -33,8 +33,10 @@
 - [ ] Give the 'Workflow Automation' card a 2/3 width and 'Web Development' a 1/3 width on desktop to maintain the asymmetrical Bento aesthetic.
 
 ## Portfolio / "Skills" Section (/components/Skills.tsx)
+- [ ] Rename "Skills.tsx" into "Portfolio.tsx"
+- [ ] On the navbar (/components/FloatingNav.tsx) rename "Skills" to "Portfolio"
 - [ ] Keep the cards style. Each card represents one project.
-- [ ] Replace generic Lucide icons with small, high-quality Tech Stack badges (e.g., Next.js, Oracle, Python) at the bottom or top-right of the card.
+- [ ] Replace generic Lucide icons in cards with small, high-quality Tech Stack badges (e.g., Next.js, Oracle, Python) at the bottom or top-right of the card.
 - [ ] Change the cards so that they also contain a creation date of the project (February 2021) below the title in smaller font, description of the project below both the title & date, and a project photo below that fits onto the card.
 - [ ] Make each card clickable that leads to a detailed page or demo of the project.
 
