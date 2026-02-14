@@ -51,7 +51,7 @@ const timelineData = [
 
 export function Timeline() {
   return (
-    <section className="py-32 px-4 bg-gradient-to-b from-transparent via-gray-900/20 to-transparent">
+    <section id="experience" className="py-32 px-4 bg-gradient-to-b from-transparent via-gray-900/20 to-transparent">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -96,9 +96,8 @@ export function Timeline() {
                 </div>
 
                 <div
-                  className={`p-6 rounded-xl bg-gradient-to-br ${
-                    colorClasses[item.color as keyof typeof colorClasses]
-                  } border hover:scale-[1.02] transition-transform duration-300`}
+                  className={`p-6 rounded-xl bg-gradient-to-br ${colorClasses[item.color as keyof typeof colorClasses]
+                    } border hover:scale-[1.02] transition-transform duration-300`}
                 >
                   <div className="flex items-start justify-between mb-3">
                     <div>
