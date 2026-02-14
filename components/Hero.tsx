@@ -83,7 +83,7 @@ export function Hero() {
               </a>
 
               <a
-                href="#skills"
+                href="#portfolio"
                 className="px-8 py-4 border border-blue-500/30 rounded-full text-blue-400 font-semibold hover:bg-blue-500/10 transition-all duration-300 flex items-center gap-2 group"
               >
                 <ExternalLink size={18} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />

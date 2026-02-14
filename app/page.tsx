@@ -2,8 +2,9 @@ import { FloatingNav } from '@/components/FloatingNav';
 import { Hero } from '@/components/Hero';
 import { TrustBar } from '@/components/TrustBar';
 import { BentoGrid } from '@/components/BentoGrid';
+import { Services } from '@/components/Services';
 import { Timeline } from '@/components/Timeline';
-import { Skills } from '@/components/Skills';
+import { Portfolio } from '@/components/Portfolio';
 import { CTA } from '@/components/CTA';
 import { Footer } from '@/components/Footer';
 
@@ -16,7 +17,8 @@ export default function Home() {
         <TrustBar />
         <BentoGrid />
         <Timeline />
-        <Skills />
+        <Services />
+        <Portfolio />
         <CTA />
       </main>
       <Footer />

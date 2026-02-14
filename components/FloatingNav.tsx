@@ -1,13 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Home, Briefcase, Code, Mail } from 'lucide-react';
+import { Home, Briefcase, Zap, Code, Mail } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const navItems = [
   { name: 'Home', href: '#hero', icon: Home },
   { name: 'Experience', href: '#experience', icon: Briefcase },
-  { name: 'Skills', href: '#skills', icon: Code },
+  { name: 'Services', href: '#services', icon: Zap },
+  { name: 'Portfolio', href: '#portfolio', icon: Code },
   { name: 'Contact', href: '#contact', icon: Mail },
 ];
 
@@ -47,8 +48,8 @@ export function FloatingNav() {
             key={name}
             href={href}
             className={`relative px-4 py-2 rounded-full transition-all duration-300 flex items-center gap-2 ${activeSection === href.slice(1)
-                ? 'text-white'
-                : 'text-gray-400 hover:text-white'
+              ? 'text-white'
+              : 'text-gray-400 hover:text-white'
               }`}
           >
             {activeSection === href.slice(1) && (
