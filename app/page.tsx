@@ -15,9 +15,9 @@ export default function Home() {
       <main>
         <Hero />
         <TrustBar />
+        <Services />
         <BentoGrid />
         <Timeline />
-        <Services />
         <Portfolio />
         <CTA />
       </main>
