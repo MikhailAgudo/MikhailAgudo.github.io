@@ -25,20 +25,20 @@
 - [x] Create a folder where I can put in pictures for use
 
 ## New Services Section (new file /components/Services.tsx)
-- [ ] On the navbar (/components/FloatingNav.tsx) add "Services" right after "Experience"
-- [ ] Add the services section to the page after the "Experience" section.
-- [ ] Use a bento box layout (like /components/BentoGrid.tsx)
-- [ ] The bento box only has two cards: "Workflow Automation" and "Web Development".
+- [x] On the navbar (/components/FloatingNav.tsx) add "Services" right after "Experience"
+- [x] Add the services section to the page after the "Experience" section.
+- [x] Use a bento box layout (like /components/BentoGrid.tsx)
+- [x] The bento box only has two cards: "Workflow Automation" and "Web Development".
     - For now, the boxes should be empty. I'll fill them in later.
-- [ ] Give the 'Workflow Automation' card a 2/3 width and 'Web Development' a 1/3 width on desktop to maintain the asymmetrical Bento aesthetic.
+- [x] Give the 'Workflow Automation' card a 2/3 width and 'Web Development' a 1/3 width on desktop to maintain the asymmetrical Bento aesthetic.
 
 ## Portfolio / "Skills" Section (/components/Skills.tsx)
-- [ ] Rename "Skills.tsx" into "Portfolio.tsx"
-- [ ] On the navbar (/components/FloatingNav.tsx) rename "Skills" to "Portfolio"
-- [ ] Keep the cards style. Each card represents one project.
-- [ ] Replace generic Lucide icons in cards with small, high-quality Tech Stack badges (e.g., Next.js, Oracle, Python) at the bottom or top-right of the card.
-- [ ] Change the cards so that they also contain a creation date of the project (February 2021) below the title in smaller font, description of the project below both the title & date, and a project photo below that fits onto the card.
-- [ ] Make each card clickable that leads to a detailed page or demo of the project.
+- [x] Rename "Skills.tsx" into "Portfolio.tsx"
+- [x] On the navbar (/components/FloatingNav.tsx) rename "Skills" to "Portfolio"
+- [x] Keep the cards style. Each card represents one project.
+- [x] Replace generic Lucide icons in cards with small, high-quality Tech Stack badges (e.g., Next.js, Oracle, Python) at the bottom or top-right of the card.
+- [x] Change the cards so that they also contain a creation date of the project (February 2021) below the title in smaller font, description of the project below both the title & date, and a project photo below that fits onto the card.
+- [x] Make each card clickable that leads to a detailed page or demo of the project.
 
 ## NEW: Polish & Aesthetics (Expert Suggestions)
 - [ ] Add a "Spotlight" hover effect to all Bento and Portfolio cards (a subtle radial gradient following the mouse).
