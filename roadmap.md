@@ -20,7 +20,7 @@
 - [ ] Add a "View Portfolio" button next to "See My Experience"
 
 ### Profile Photo
-- [ ] Restructure the hero section so that a photo can be placed on the right side of the text
+- [ ] Restructure the hero into a 2-column grid (60/40 split). Use a Glassmorphism container for the profile photo placeholder with a subtle pulse animation.
     - For now, I don't have a professional photo of me, so I'll use a placeholder
 - [ ] Create a folder where I can put in pictures for use
 
@@ -30,18 +30,26 @@
 - [ ] Use a bento box layout (like /components/BentoGrid.tsx)
 - [ ] The bento box only has two cards: "Workflow Automation" and "Web Development".
     - For now, the boxes should be empty. I'll fill them in later.
+- [ ] Give the 'Workflow Automation' card a 2/3 width and 'Web Development' a 1/3 width on desktop to maintain the asymmetrical Bento aesthetic.
 
 ## Portfolio / "Skills" Section (/components/Skills.tsx)
 - [ ] Keep the cards style. Each card represents one project.
-- [ ] Remove lucide-react icons from the cards.
+- [ ] Replace generic Lucide icons with small, high-quality Tech Stack badges (e.g., Next.js, Oracle, Python) at the bottom or top-right of the card.
 - [ ] Change the cards so that they also contain a creation date of the project (February 2021) below the title in smaller font, description of the project below both the title & date, and a project photo below that fits onto the card.
 - [ ] Make each card clickable that leads to a detailed page or demo of the project.
 
-## Work Experience
-- [ ] Revise and rewrite the cards in "Work Experience" section
+## NEW: Polish & Aesthetics (Expert Suggestions)
+- [ ] Add a "Spotlight" hover effect to all Bento and Portfolio cards (a subtle radial gradient following the mouse).
+- [ ] Ensure mobile responsiveness: Hero section should stack (Photo on top) and Services should stack vertically.
+- [ ] Implement Framer Motion `AnimatePresence` for smooth section transitions.
+- [ ] Add "Open Graph" (OG) meta tags in `layout.tsx` for professional link previews on LinkedIn.
 
-### SEO & Discoverability Basics
+## SEO & Discoverability Basics
 - [ ] Include target keywords in page title, headings, and meta description  
   Examples: "AI Automation Engineer Philippines", "Oracle HCM Cloud Freelancer", "AI Workflow Optimization"
 - [ ] Use clean, readable URLs (e.g., /services/ai-automation instead of random strings)
 - [ ] Ensure fast loading (compress images, use modern hosting)
+
+## Work Experience
+This section is for me. Do not do the items here.
+- [ ] Revise and rewrite the cards in "Work Experience" section
