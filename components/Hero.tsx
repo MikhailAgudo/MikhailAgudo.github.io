@@ -24,14 +24,6 @@ export function Hero() {
             className="text-left space-y-8"
           >
             <div className="space-y-4">
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium tracking-wide uppercase"
-              >
-                Mikhail Joseph Agudo
-              </motion.div>
 
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -51,9 +43,14 @@ export function Hero() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="space-y-4"
               >
-                <p className="text-xl sm:text-2xl font-semibold text-blue-400 lg:pr-10">
-                  Freelance AI Automation Engineer | LLM-Driven Integration Specialist | Oracle Integrations & Analytics Expert
-                </p>
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium tracking-wide uppercase"
+                >
+                  Mikhail Joseph Agudo
+                </motion.div>
                 <p className="text-lg text-gray-400 max-w-2xl leading-relaxed">
                   With 4+ years optimizing enterprise systems, I now help businesses automate repetitive labor and decision-making to streamline operations, and build websites to showcase their products and services.
                 </p>
@@ -143,22 +140,23 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-          className="absolute bottom-4 left-1/2 -translate-x-1/2 hidden md:block"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="flex flex-col items-center gap-2"
-          >
-            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500">Scroll</span>
-            <ArrowDown className="w-4 h-4 text-gray-500" />
-          </motion.div>
-        </motion.div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 1.2 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block z-20"
+      >
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="flex flex-col items-center gap-2"
+        >
+          <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500">Scroll</span>
+          <ArrowDown className="w-4 h-4 text-gray-500" />
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
