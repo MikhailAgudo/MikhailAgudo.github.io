@@ -14,11 +14,11 @@ export default function Home() {
       <FloatingNav />
       <main>
         <Hero />
-        <TrustBar />
         <Services />
+        <Portfolio />
+        <TrustBar />
         <BentoGrid />
         <Timeline />
-        <Portfolio />
         <CTA />
       </main>
       <Footer />
